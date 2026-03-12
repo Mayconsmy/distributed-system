@@ -1,0 +1,85 @@
+/* src/App.css */
+
+.egypt-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Gradiente simulando o deserto */
+  background: linear-gradient(180deg, #daa520 0%, #d2b48c 70%, #8b4513 100%);
+  font-family: 'Open Sans', sans-serif;
+  color: #3e2723;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.egypt-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.egypt-header h1 {
+  font-family: 'Cinzel', serif; /* Fonte que adicionamos no index.html */
+  font-weight: 700;
+  color: #fff8dc;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6), -1px -1px 0 #b8860b;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hieroglyphs {
+  font-size: 2.5rem;
+  color: rgba(62, 39, 35, 0.6);
+  letter-spacing: 1rem;
+}
+
+/* Organiza os cartões lado a lado no PC e um embaixo do outro no celular */
+.curiosities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.curiosity-card {
+  background-color: rgba(255, 248, 220, 0.9); /* Cor de papiro claro */
+  border: 3px solid #b8860b; /* Borda dourada */
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+/* Efeito de flutuar ao passar o mouse */
+.curiosity-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+}
+
+.curiosity-card h2 {
+  font-family: 'Cinzel', serif;
+  color: #8b4513;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #daa520;
+  padding-bottom: 0.5rem;
+}
+
+.curiosity-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.egypt-footer {
+  margin-top: 4rem;
+  font-family: 'Cinzel', serif;
+  color: #fff8dc;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}

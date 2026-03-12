@@ -1,0 +1,124 @@
+/* src/App.css */
+
+/* Removemos estilos padrão do Vite */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+/* Container Principal - Paleta de Areia */
+.egypt-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Gradiente simulando o céu do deserto e a areia */
+  background: linear-gradient(180deg, #daa520 0%, #d2b48c 70%, #8b4513 100%);
+  font-family: 'Open Sans', sans-serif;
+  color: #3e2723; /* Marrom escuro para texto */
+  padding: 2rem;
+}
+
+/* Cabeçalho Monumental */
+.egypt-header h1 {
+  font-family: 'Cinzel', serif; /* Fonte monumental */
+  font-weight: 700;
+  color: #fff8dc; /* Amarelo milho suave */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5), -1px -1px 0 #b8860b; /* Sombra dourada */
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Área de Hieróglifos simulados */
+.hieroglyphs {
+  font-size: 2rem;
+  color: rgba(62, 39, 35, 0.4); /* Marrom muito claro */
+  margin-bottom: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+/* Logos Estilizados (Dando banho de ouro) */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.styled-logo {
+  /* Efeito de filtro para transformar em ouro */
+  filter: drop-shadow(0 0 2em #daa520aa) sepia(1) saturate(5) hue-rotate(-15deg);
+}
+
+.logo.react {
+  animation: logo-spin infinite 20s linear;
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Cartão do Contador (Parece uma placa de pedra) */
+.counter-card {
+  background-color: rgba(255, 248, 220, 0.6); /* Cornsilk translúcido */
+  border: 4px solid #b8860b; /* Borda dourada antiga */
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* O número do contador */
+.egypt-count {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b8860b;
+}
+
+/* Botão do Faraó */
+.egypt-button {
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  background-color: #d4af37; /* Ouro */
+  color: #fff;
+  border: 2px solid #b8860b;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 0 #8b4513; /* Sombra sólida */
+}
+
+.egypt-button:hover {
+  background-color: #b8860b;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #8b4513;
+}
+
+.egypt-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #8b4513;
+}
+
+/* Texto de rodapé */
+.read-the-docs {
+  font-size: 0.9rem;
+  color: #5d4037;
+  font-style: italic;
+}
+
+.egypt-code {
+  background-color: rgba(62, 39, 35, 0.1);
+  color: #8b4513;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
